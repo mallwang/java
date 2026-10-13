@@ -1,0 +1,10 @@
+# Not-yet-modernized legacy apps stay local
+/legacy/
+
+# Build output
+target/
+
+# Editor
+.vscode/
+.idea/
+*.iml
