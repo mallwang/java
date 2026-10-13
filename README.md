@@ -25,6 +25,7 @@ The exact JAR name and controls are in each app's README.
 | [apps/](apps/README.md) | All applications, one directory each with `legacy/` and `modernized/` |
 | [apps/misc/](apps/misc/README.md) | Small Swing apps (listed below) |
 | [apps/games/](apps/games/README.md) | Games |
+| [apps/dvd-verleih/](apps/dvd-verleih/modernized/README.md) | DVD rental management (Swing + SQLite) |
 | `legacy/` | Old applications not yet modernized (git-ignored, local only) |
 | [docs/](docs/legacy-modernization.md) | Migration plans and status logs ([misc](docs/misc-modernization.md), [legacy](docs/legacy-modernization.md)) |
 | `tools/` | Decompiler (CFR) |
@@ -42,3 +43,5 @@ See [apps/misc](apps/misc/README.md): [timer](apps/misc/timer/modernized/README.
 [KDET](apps/misc/KDET/modernized/README.md).
 
 Games: [spacewar](apps/games/spacewar/modernized/README.md), [volle-lotte](apps/games/volle-lotte/modernized/README.md), [anno1404-produktionsrechner](apps/games/anno1404-produktionsrechner/modernized/README.md) (see [apps/games](apps/games/README.md)).
+
+Other: [dvd-verleih](apps/dvd-verleih/modernized/README.md) (needs no server; data in `~/.dvd-verleih/`).
