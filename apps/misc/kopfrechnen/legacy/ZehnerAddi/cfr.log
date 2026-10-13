@@ -1,0 +1,26 @@
+Processing /mnt/d/tower-export/projekte/java/kleine-applikationen/kopfrechnen/legacy/ZehnerAddi/ZehnerAddi.jar (use silent to silence)
+Processing alleSchleifen.ForSchleife
+Processing alleSchleifen.WhileSchleife
+Processing alleSchleifen.DoSchleife
+Processing alleSchleifen.Main
+Processing herztest.Test
+Processing kopfrechner.ZehnerMultiplizieren
+Processing kopfrechner.ZehnerSubtrahieren
+Processing kopfrechner.ZehnerAddieren
+Processing kopfrechner.HunderterAddieren
+Processing quersummenrechner.QsRechnerMain
+Processing sekundenzerlegung.SZerlMain
+Processing sekundenzerlegung.Sekundenzerleger
+Processing sternenbaum.Main
+Processing taschenrechner.TrMain
+Processing taschenrechner.Subtraktion
+Processing taschenrechner.Division
+Processing taschenrechner.Addition
+Processing taschenrechner.Multiplikation
+Processing vielfache.VfMain
+Processing vielfache.Multiplizierer
+Processing zahlzerlegung.ZzMain
+Processing zahlzerlegung.ZerlegenVorwaerts
+Processing zahlzerlegung.ZerlegenRueckwaerts
+Processing zinseszinsen.Berechner
+Processing zinseszinsen.Main

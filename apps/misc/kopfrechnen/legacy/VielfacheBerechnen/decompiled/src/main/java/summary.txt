@@ -1,0 +1,2 @@
+Summary for /mnt/d/tower-export/projekte/java/kleine-applikationen/kopfrechnen/legacy/VielfacheBerechnen/VielfacheBerechnen.jar
+Decompiled with CFR 0.152

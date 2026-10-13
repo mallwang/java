@@ -1,0 +1,26 @@
+Processing /mnt/d/tower-export/projekte/java/kleine-applikationen/kopfrechnen/legacy/VielfacheBerechnen/VielfacheBerechnen.jar (use silent to silence)
+Processing alleSchleifen.ForSchleife
+Processing alleSchleifen.WhileSchleife
+Processing alleSchleifen.DoSchleife
+Processing alleSchleifen.Main
+Processing herztest.Test
+Processing kopfrechner.ZehnerMultiplizieren
+Processing kopfrechner.ZehnerSubtrahieren
+Processing kopfrechner.ZehnerAddieren
+Processing kopfrechner.HunderterAddieren
+Processing quersummenrechner.Main
+Processing sekundenzerlegung.Sekundenzerleger
+Processing sekundenzerlegung.Main
+Processing sternenbaum.Main
+Processing taschenrechner.Subtraktion
+Processing taschenrechner.Main
+Processing taschenrechner.Division
+Processing taschenrechner.Addition
+Processing taschenrechner.Multiplikation
+Processing vielfache.Main
+Processing vielfache.Multiplizierer
+Processing zahlzerlegung.Main
+Processing zahlzerlegung.ZerlegenVorwaerts
+Processing zahlzerlegung.ZerlegenRueckwaerts
+Processing zinseszinsen.Berechner
+Processing zinseszinsen.Main
