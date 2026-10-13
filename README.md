@@ -41,4 +41,4 @@ See [apps/misc](apps/misc/README.md): [timer](apps/misc/timer/modernized/README.
 [verbrauchsrechner](apps/misc/verbrauchsrechner/modernized/README.md),
 [KDET](apps/misc/KDET/modernized/README.md).
 
-Games: [spacewar](apps/games/spacewar/modernized/README.md) (see [apps/games](apps/games/README.md)).
+Games: [spacewar](apps/games/spacewar/modernized/README.md), [volle-lotte](apps/games/volle-lotte/modernized/README.md), [anno1404-produktionsrechner](apps/games/anno1404-produktionsrechner/modernized/README.md) (see [apps/games](apps/games/README.md)).

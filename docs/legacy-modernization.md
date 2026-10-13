@@ -80,8 +80,8 @@ Same as the misc workflow, adapted:
 | verbrauchsrechner | yes | yes | yes | `apps/misc/verbrauchsrechner/`, v2.0 |
 | spacewar | yes | yes | yes | `apps/games/spacewar/`, v2.0 |
 | KDET | yes | yes | yes | `apps/misc/KDET/`, v2.0, Saxon-HE 12.5 |
-| volle-lotte | no | no | no | |
-| anno1404-produktionsrechner | no | no | no | JAR only |
+| volle-lotte | yes | yes | yes | `apps/games/volle-lotte/`, v2.0 |
+| anno1404-produktionsrechner | yes | n/a (JAR only, decompiled with CFR) | yes | `apps/games/anno1404-produktionsrechner/`, v2.0 |
 | dvd-verleih | no | no | no | MySQL -> SQLite |
 | my-vocabularies | no | n/a | n/a | Android, stays legacy |
 | anno-online | no | n/a | n/a | data only, stays legacy |
@@ -98,3 +98,5 @@ Same as the misc workflow, adapted:
   Swing, 6 JUnit tests. Fixed: highscore rewritten on every repaint, case-sensitive image names (`.PNG` vs `.png`), missile removal
   while iterating, craft leaving the board. Highscore file format kept. `mvn package` passes, JAR starts under WSLg; gameplay not played through.
 - 2026-10-13: KDET moved to `apps/misc/KDET/{legacy,modernized}` and modernized. The 7 stylesheets use XSLT 2.0 (`for-each-group`, `for ... return`), so the JDK engine is not an option; Saxon 8 jars replaced by Saxon-HE 12.5, shaded into the executable JAR. Logic split from Swing (`KdetTransformer`), 3 JUnit tests run the real stylesheets on a small fixture. Fixed: temp files written to / deleted from the output folder, Windows-only `\\` paths, parallel-list indexing of sections, zip slip. `mvn package` passes, JAR starts under WSLg; legacy sources also compile (`javac`, scratch dir) and start; GUI not clicked through, no real calibration data available.
+- 2026-10-13: volle-lotte moved to `apps/games/volle-lotte/{legacy,modernized}` and modernized. Logic (`Punkte`, `Runde`, `Spiel`, `Kartenstapel`) split from Swing, 11 JUnit tests. Fixed: bust check on 4s, crash on empty deck, securing non-scoring dice, absolute Windows image path. Unfinished legacy features (non-bonus cards, win condition, save/load) not added. `mvn package` passes, JAR starts under WSLg; legacy sources also compile (`javac -encoding ISO-8859-1`, scratch dir) and start; gameplay not clicked through.
+- 2026-10-13: anno1404-produktionsrechner moved to `apps/games/anno1404-produktionsrechner/{legacy,modernized}`, JAR decompiled with CFR into `legacy/decompiled/`. The 21 copy-pasted good blocks became one data table (`Waren`) plus a generic calculation (`Ware`), 6 JUnit tests (rates, per-group truncation, unlock thresholds, input parsing, all image names resolve). `null` layout replaced by layout managers. `mvn package` passes, JAR starts under WSLg; GUI not clicked through; decompiled legacy was not recompiled.

@@ -6,6 +6,6 @@ decompiler output) and `modernized/` (Maven project with its own README).
 | Directory | Description |
 |-----------|-------------|
 | [misc](misc/README.md) | Small Swing apps (timer, games, calculators), modernized from old JARs |
-| [games](games/README.md) | Games (space shooter, ...) modernized from old Eclipse projects |
+| [games](games/README.md) | Games (space shooter, dice game, production calculator, ...) modernized from old Eclipse projects |
 
 Back to the [repository overview](../README.md).
