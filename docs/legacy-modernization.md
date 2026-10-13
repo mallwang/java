@@ -78,7 +78,7 @@ Same as the misc workflow, adapted:
 | App | Moved | Compiles (legacy) | Modernized | Notes |
 |-----|:---:|:---:|:---:|-------|
 | verbrauchsrechner | yes | yes | yes | `apps/misc/verbrauchsrechner/`, v2.0 |
-| spacewar | no | no | no | |
+| spacewar | yes | yes | yes | `apps/games/spacewar/`, v2.0 |
 | KDET | no | no | no | |
 | volle-lotte | no | no | no | |
 | anno1404-produktionsrechner | no | no | no | JAR only |
@@ -94,3 +94,6 @@ Same as the misc workflow, adapted:
   `apps/misc/verbrauchsrechner/{legacy,modernized}` and modernized: unfinished legacy (only fish calculated) became one generic
   calculation over 15 goods, console main with arguments, JUnit tests. `mvn package` passes, JAR prints the table. Legacy output for
   the example population (9 fishers) reproduced.
+- 2026-10-13: spacewar moved to `apps/games/spacewar/{legacy,modernized}` and modernized (new group `apps/games/`). Logic split from
+  Swing, 6 JUnit tests. Fixed: highscore rewritten on every repaint, case-sensitive image names (`.PNG` vs `.png`), missile removal
+  while iterating, craft leaving the board. Highscore file format kept. `mvn package` passes, JAR starts under WSLg; gameplay not played through.

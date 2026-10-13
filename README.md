@@ -24,6 +24,7 @@ The exact JAR name and controls are in each app's README.
 |------|---------|
 | [apps/](apps/README.md) | All applications, one directory each with `legacy/` and `modernized/` |
 | [apps/misc/](apps/misc/README.md) | Small Swing apps (listed below) |
+| [apps/games/](apps/games/README.md) | Games |
 | `legacy/` | Old applications not yet modernized (git-ignored, local only) |
 | [docs/](docs/legacy-modernization.md) | Migration plans and status logs ([misc](docs/misc-modernization.md), [legacy](docs/legacy-modernization.md)) |
 | `tools/` | Decompiler (CFR) |
@@ -38,3 +39,5 @@ See [apps/misc](apps/misc/README.md): [timer](apps/misc/timer/modernized/README.
 [arbeitszeit](apps/misc/arbeitszeit/modernized/README.md), [gleitzeit](apps/misc/gleitzeit/modernized/README.md),
 [1337_converter](apps/misc/1337_converter/modernized/README.md),
 [verbrauchsrechner](apps/misc/verbrauchsrechner/modernized/README.md).
+
+Games: [spacewar](apps/games/spacewar/modernized/README.md) (see [apps/games](apps/games/README.md)).
