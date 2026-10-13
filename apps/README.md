@@ -1,0 +1,10 @@
+# Applications
+
+One directory per application or application group. Each contains `legacy/` (original material and raw
+decompiler output) and `modernized/` (Maven project with its own README).
+
+| Directory | Description |
+|-----------|-------------|
+| [misc](misc/README.md) | Small Swing apps (timer, games, calculators), modernized from old JARs |
+
+Back to the [repository overview](../README.md).
