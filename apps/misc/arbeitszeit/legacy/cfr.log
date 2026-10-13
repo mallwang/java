@@ -1,0 +1,8 @@
+Processing /mnt/d/tower-export/projekte/java/kleine-applikationen/arbeitszeit/legacy/Arbeitszeitrechner v. 1.5.jar (use silent to silence)
+Processing gui.Tray
+Processing gui.Hauptseite
+Processing steuerung.StaXWriter
+Processing steuerung.StaXParser
+Processing steuerung.Hauptsteuerung
+Processing steuerung.Setting
+Processing steuerung.TimerRestzeit
