@@ -79,7 +79,7 @@ Same as the misc workflow, adapted:
 |-----|:---:|:---:|:---:|-------|
 | verbrauchsrechner | yes | yes | yes | `apps/misc/verbrauchsrechner/`, v2.0 |
 | spacewar | yes | yes | yes | `apps/games/spacewar/`, v2.0 |
-| KDET | yes | untested | yes | `apps/misc/KDET/`, v2.0, Saxon-HE 12.5 |
+| KDET | yes | yes | yes | `apps/misc/KDET/`, v2.0, Saxon-HE 12.5 |
 | volle-lotte | no | no | no | |
 | anno1404-produktionsrechner | no | no | no | JAR only |
 | dvd-verleih | no | no | no | MySQL -> SQLite |
@@ -97,4 +97,4 @@ Same as the misc workflow, adapted:
 - 2026-10-13: spacewar moved to `apps/games/spacewar/{legacy,modernized}` and modernized (new group `apps/games/`). Logic split from
   Swing, 6 JUnit tests. Fixed: highscore rewritten on every repaint, case-sensitive image names (`.PNG` vs `.png`), missile removal
   while iterating, craft leaving the board. Highscore file format kept. `mvn package` passes, JAR starts under WSLg; gameplay not played through.
-- 2026-10-13: KDET moved to `apps/misc/KDET/{legacy,modernized}` and modernized. The 7 stylesheets use XSLT 2.0 (`for-each-group`, `for ... return`), so the JDK engine is not an option; Saxon 8 jars replaced by Saxon-HE 12.5, shaded into the executable JAR. Logic split from Swing (`KdetTransformer`), 3 JUnit tests run the real stylesheets on a small fixture. Fixed: temp files written to / deleted from the output folder, Windows-only `\\` paths, parallel-list indexing of sections, zip slip. `mvn package` passes, JAR starts under WSLg; GUI not clicked through, no real calibration data available.
+- 2026-10-13: KDET moved to `apps/misc/KDET/{legacy,modernized}` and modernized. The 7 stylesheets use XSLT 2.0 (`for-each-group`, `for ... return`), so the JDK engine is not an option; Saxon 8 jars replaced by Saxon-HE 12.5, shaded into the executable JAR. Logic split from Swing (`KdetTransformer`), 3 JUnit tests run the real stylesheets on a small fixture. Fixed: temp files written to / deleted from the output folder, Windows-only `\\` paths, parallel-list indexing of sections, zip slip. `mvn package` passes, JAR starts under WSLg; legacy sources also compile (`javac`, scratch dir) and start; GUI not clicked through, no real calibration data available.
