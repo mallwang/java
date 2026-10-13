@@ -38,6 +38,7 @@ See [apps/misc](apps/misc/README.md): [timer](apps/misc/timer/modernized/README.
 [herzenswunsch](apps/misc/herzenswunsch/modernized/README.md), [herztest](apps/misc/herztest/modernized/README.md),
 [arbeitszeit](apps/misc/arbeitszeit/modernized/README.md), [gleitzeit](apps/misc/gleitzeit/modernized/README.md),
 [1337_converter](apps/misc/1337_converter/modernized/README.md),
-[verbrauchsrechner](apps/misc/verbrauchsrechner/modernized/README.md).
+[verbrauchsrechner](apps/misc/verbrauchsrechner/modernized/README.md),
+[KDET](apps/misc/KDET/modernized/README.md).
 
 Games: [spacewar](apps/games/spacewar/modernized/README.md) (see [apps/games](apps/games/README.md)).
