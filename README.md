@@ -25,7 +25,7 @@ The exact JAR name and controls are in each app's README.
 | [apps/](apps/README.md) | All applications, one directory each with `legacy/` and `modernized/` |
 | [apps/misc/](apps/misc/README.md) | Small Swing apps (listed below) |
 | `legacy/` | Old applications not yet modernized (git-ignored, local only) |
-| [docs/](docs/misc-modernization.md) | Migration plan and status log for the small apps |
+| [docs/](docs/legacy-modernization.md) | Migration plans and status logs ([misc](docs/misc-modernization.md), [legacy](docs/legacy-modernization.md)) |
 | `tools/` | Decompiler (CFR) |
 | [AGENTS.md](AGENTS.md) | Context for coding agents |
 
@@ -36,4 +36,5 @@ See [apps/misc](apps/misc/README.md): [timer](apps/misc/timer/modernized/README.
 [bingo](apps/misc/bingo/modernized/README.md), [noten](apps/misc/noten/modernized/README.md),
 [herzenswunsch](apps/misc/herzenswunsch/modernized/README.md), [herztest](apps/misc/herztest/modernized/README.md),
 [arbeitszeit](apps/misc/arbeitszeit/modernized/README.md), [gleitzeit](apps/misc/gleitzeit/modernized/README.md),
-[1337_converter](apps/misc/1337_converter/modernized/README.md).
+[1337_converter](apps/misc/1337_converter/modernized/README.md),
+[verbrauchsrechner](apps/misc/verbrauchsrechner/modernized/README.md).

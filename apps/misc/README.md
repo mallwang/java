@@ -16,7 +16,8 @@ Maven project. Every app folder has `legacy/` (original JAR, sources if any, raw
 | [arbeitszeit](arbeitszeit/modernized/README.md) | Working time / leave time calculator | 2.0 |
 | [gleitzeit](gleitzeit/modernized/README.md) | Flextime calculator (GZR) | 3.6 |
 | [1337_converter](1337_converter/modernized/README.md) | Text to leetspeak converter | 2.0 |
+| [verbrauchsrechner](verbrauchsrechner/modernized/README.md) | Anno 1404 consumption calculator (console) | 2.0 |
 
-Migration plan, status table and log: [docs/misc-modernization.md](../../docs/misc-modernization.md).
+Migration plans: [misc-modernization.md](../../docs/misc-modernization.md), [legacy-modernization.md](../../docs/legacy-modernization.md).
 
 Back to [all applications](../README.md).
