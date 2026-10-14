@@ -8,3 +8,6 @@ target/
 .vscode/
 .idea/
 *.iml
+
+# unsorted export of old sources
+gitlab-export/
