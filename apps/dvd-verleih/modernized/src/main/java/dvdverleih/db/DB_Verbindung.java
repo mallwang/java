@@ -53,6 +53,9 @@ public class DB_Verbindung {
 	/** Opens the database file (property {@code dvdverleih.db}, default {@code ~/.dvd-verleih/dvd-verleih.db}). */
 	public DB_Verbindung() {
 		this("jdbc:sqlite:" + dateiPfad());
+		if (Boolean.getBoolean("dvdverleih.beispieldaten")) {
+			beispieldatenLaden();
+		}
 	}
 
 	/** Opens the given JDBC URL, e.g. {@code jdbc:sqlite::memory:} for tests. */
@@ -66,6 +69,26 @@ public class DB_Verbindung {
 			}
 		} catch (SQLException e) {
 			throw new IllegalArgumentException("Connect nicht moeglich", e);
+		}
+	}
+
+	/** Loads the sample data of the legacy MySQL dump ({@code beispieldaten.sql}) unless customers already exist. */
+	public void beispieldatenLaden() {
+		try (var in = DB_Verbindung.class.getResourceAsStream("/beispieldaten.sql");
+				Statement st = conn.createStatement()) {
+			try (ResultSet r = st.executeQuery("SELECT COUNT(*) FROM kunde")) {
+				if (r.getInt(1) > 0) {
+					return;
+				}
+			}
+			// statements end with ";" at the end of a line
+			for (String sql : new String(in.readAllBytes(), java.nio.charset.StandardCharsets.UTF_8).split(";\\R")) {
+				if (!sql.isBlank()) {
+					st.executeUpdate(sql);
+				}
+			}
+		} catch (IOException | SQLException e) {
+			throw new IllegalArgumentException("Beispieldaten nicht ladbar", e);
 		}
 	}
 

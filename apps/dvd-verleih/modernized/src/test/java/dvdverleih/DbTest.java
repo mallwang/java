@@ -66,4 +66,13 @@ class DbTest {
 		assertTrue(Pruefung.pDate("2000-02-29"));
 		assertFalse(Pruefung.pDate("2001-02-29"));
 	}
+
+	@Test
+	void loadsSampleDataOnce() {
+		DB_Verbindung db = new DB_Verbindung("jdbc:sqlite::memory:");
+		db.beispieldatenLaden();
+		db.beispieldatenLaden();
+		assertEquals(l("Meine Braut, ihr Vater und ich"), db.select(l("titel"), "objekt", l("id"), l("1")));
+		assertEquals(13, db.select(l("id"), "verleih", l("ausleihdatum"), l("2012-11-08")).size());
+	}
 }
